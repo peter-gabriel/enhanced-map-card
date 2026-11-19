@@ -1,0 +1,33 @@
+{
+  "name": "enhanced-map-card",
+  "version": "0.3.0",
+  "description": "Home Assistant card: Google Maps with a clean track, stops, a timeline and high-accuracy GPS control",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc --noEmit && vite build",
+    "watch": "vite build --watch",
+    "serve": "vite preview",
+    "dev": "vite build --watch & vite preview",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "lit": "^3.3.3"
+  },
+  "devDependencies": {
+    "@types/google.maps": "^3.66.10",
+    "typescript": "^5.9.3",
+    "vite": "^6.4.6",
+    "vitest": "^3.2.7"
+  },
+  "keywords": [
+    "home-assistant",
+    "hacs",
+    "lovelace",
+    "custom-card",
+    "google-maps",
+    "location",
+    "tracking"
+  ],
+  "private": true
+}
