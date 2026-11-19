@@ -174,15 +174,9 @@ This rebuilds on every change and serves the file at `http://<your-machine-ip>:5
 
 UI strings live in [`src/i18n.ts`](src/i18n.ts). Add a dictionary of type `Strings` and map its language prefix in `strings()`.
 
-### Releasing
+### Contributing
 
-`dist/` is not committed. Every GitHub release gets its own build:
-
-1. Bump `version` in `package.json` (for example `npm version 0.4.0 --no-git-tag-version`) and push the commit.
-2. Publish a GitHub release with the tag `v0.4.0`.
-3. The **Release** workflow checks that the tag matches `package.json`. It then runs the tests and builds the card, and attaches `enhanced-map-card.js` to the release. HACS installs that file.
-
-The **Validate** workflow builds and tests every push and pull request. It also runs the official HACS validation.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the branching model (git flow), the pull request flow and how releases are made.
 
 ## License
 
