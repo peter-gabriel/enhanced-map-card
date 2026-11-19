@@ -17,20 +17,31 @@ A Home Assistant Lovelace card that shows where people have been on **Google Map
 
 ## Installation
 
-### HACS (recommended)
+The card is not in the default store yet, so you add it by its GitHub link. Updates then arrive with each new release.
 
-Until the card is listed in the default HACS store, add it as a custom repository:
+### Marketplace (newer Home Assistant versions)
 
-1. In HACS → ⋮ → **Custom repositories**, add this repository's URL with the type **Dashboard**.
+1. Open **Marketplace** in the sidebar and click **Add from link** (top right).
+2. Paste `https://github.com/peter-gabriel/enhanced-map-card` and click **Add**.
+3. Search for **Enhanced Map Card**, open it and click **Install**.
+4. Reload the browser when asked.
+
+The Marketplace adds the dashboard resource for you.
+
+### HACS
+
+1. In HACS → ⋮ → **Custom repositories**, add `https://github.com/peter-gabriel/enhanced-map-card` with the type **Dashboard**.
 2. Search for **Enhanced Map Card**, download it, and reload the browser.
 
 HACS adds the dashboard resource for you.
 
 ### Manual
 
-1. Download `enhanced-map-card.js` from the [latest release](../../releases/latest).
+1. Download `enhanced-map-card.js` from the [latest release](https://github.com/peter-gabriel/enhanced-map-card/releases/latest).
 2. Copy it to `/config/www/`.
 3. Add it under **Settings → Dashboards → ⋮ → Resources** as `/local/enhanced-map-card.js`, with the type *JavaScript module*.
+
+If you switch from a manual install to the Marketplace or HACS, delete the old `/local/enhanced-map-card.js` resource. Otherwise the card is loaded twice.
 
 ## Configuration
 
