@@ -2,6 +2,10 @@
 
 A Home Assistant Lovelace card that shows where people have been on **Google Maps**: a clean track instead of a cloud of dots.
 
+![Enhanced Map Card: a day of one person's track with stops and the timeline](https://raw.githubusercontent.com/peter-gabriel/enhanced-map-card/main/docs/screenshot.png)
+
+*Screenshots use fictional people and places.*
+
 - **GPS noise filtered:** points with a high `gps_accuracy` and jumps that go and come back are dropped.
 - **Stops instead of dots:** time spent in one place becomes a single marker with its duration (e.g. `2h07`). The name of the HA zone is used when there is one.
 - **One person at a time:** a colored chip per person at the top, plus "All".
@@ -74,6 +78,8 @@ The **settings button** (sliders icon) in the toolbar opens a panel where you ca
 - minimum stop time.
 
 Changes are saved in that browser only and override the YAML. **Restore YAML defaults** goes back to the configured values.
+
+![Settings panel with the map settings and the phone's high-accuracy interval](https://raw.githubusercontent.com/peter-gabriel/enhanced-map-card/main/docs/settings.png)
 
 ### Extra toolbar buttons
 
